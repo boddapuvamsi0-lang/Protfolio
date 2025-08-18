@@ -57,7 +57,7 @@
             </div>
             <div class="hero-image">
                 <div class="profile-image">
-                    <img src="profile-image" alt="profile-image" />
+                    <img src="profile.jpg" alt="Boddapu Vamsi Kumar - Java Full Stack Developer" />
                 </div>
             </div>
         </div>
@@ -99,9 +99,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="About-image">
-                    <div class="About-profile-image">
-                        <img src="About.jpg" alt="Bodapu Vamsi Kumar" />
+                <div class="about-image">
+                    <div class="about-profile-image">
+                        <img src="About.jpg" alt="Boddapu Vamsi Kumar" />
                     </div>
                 </div>
             </div>
@@ -278,7 +278,11 @@
                         <a href="#" class="social-link" title="Email"><i class="fas fa-envelope"></i></a>
                     </div>
                 </div>
-                <form class="contact-form">
+                <form class="contact-form" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+                    <input type="hidden" name="form-name" value="contact" />
+                    <p class="hidden">
+                        <label>Don't fill this out if you're human: <input name="bot-field" /></label>
+                    </p>
                     <div class="form-group">
                         <input type="text" id="name" name="name" placeholder="Your Name" required>
                     </div>
@@ -307,10 +311,3 @@
     <script src="script.js"></script>
 </body>
 </html> 
-
-
-
-
-
-
-
